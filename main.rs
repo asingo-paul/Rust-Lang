@@ -1,18 +1,24 @@
-fn main() {
-    let name = "Asingo paul";
-    println!("Welcome to the game of learning Rust {}", name);
+// dong this to always inspect files binaries
+//
+fn main(){
+    let result = authenticate("password123");
+    println!("this is {}", result);
 
-    maths();
 }
 
-fn maths() {
-    let a = 10;
-    let b = 100;
-
-    let c = a + b;
-    let d = &c;
+fn authenticate(password: &str) -> bool {
+    password == "password123"
 
 
-    println!("The value of C is {}", c);
-    println!("The value of d is also {}", d);
 }
+
+
+// fn main() {
+//     let result = authenticate("password123");
+
+//     println!("{}", result);
+// }
+
+// fn authenticate(password: &str) -> bool {
+//     password == "password123"
+// }
